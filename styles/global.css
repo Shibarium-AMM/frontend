@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(128, 128, 128, 0);
+  background: url('/calendar.svg') no-repeat;
+  background-size: contain;
+  opacity: 1;
+  display: block;
+  border-width: thin;
+  position: absolute;
+  left: -115px;
+  z-index: 9;
+}
+
+button {
+  text-transform: none !important;
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .2);
+  width: 100%;
+}
+
+main {
+  padding: 8rem 0 5rem;
+}

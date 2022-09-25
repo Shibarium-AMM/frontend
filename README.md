@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abe27564-8b3d-44fa-a788-e90bd1bf53af/deploy-status)](https://app.netlify.com/sites/jolly-meerkat-ff970f/deploys)
