@@ -1041,16 +1041,16 @@ export default function ssLiquidityManage() {
         <div className={classes.toggleButtons}>
           <Grid container spacing={0}>
             <Grid item lg={6} md={6} sm={6} xs={6}>
-              <Paper className={ `${activeTab === 'deposit' ? classes.buttonActive : classes.button} ${ classes.topLeftButton }` } onClick={ toggleDeposit } disabled={ depositLoading }>
+              <div className={ `${activeTab === 'deposit' ? classes.buttonActive : classes.button} ${ classes.topLeftButton }` } onClick={ toggleDeposit } disabled={ depositLoading }>
                 <Typography variant='h5'>Deposit</Typography>
                 <div className={ `${activeTab === 'deposit' ? classes.activeIcon : ''}` }></div>
-              </Paper>
+              </div>
             </Grid>
             <Grid item lg={6} md={6} sm={6} xs={6}>
-              <Paper className={ `${activeTab === 'withdraw' ? classes.buttonActive : classes.button}  ${ classes.bottomLeftButton }` } onClick={ toggleWithdraw } disabled={ depositLoading }>
+              <div className={ `${activeTab === 'withdraw' ? classes.buttonActive : classes.button}  ${ classes.bottomLeftButton }` } onClick={ toggleWithdraw } disabled={ depositLoading }>
                 <Typography variant='h5'>Withdraw</Typography>
                 <div className={ `${activeTab === 'withdraw' ? classes.activeIcon : ''}` }></div>
-              </Paper>
+              </div>
             </Grid>
           </Grid>
         </div>
@@ -1089,7 +1089,7 @@ export default function ssLiquidityManage() {
               </>
             }
           </div>
-          <div className={ classes.advancedToggleContainer }>
+          {/* <div className={ classes.advancedToggleContainer }>
             <FormControlLabel
               control={
                 <Switch
@@ -1103,7 +1103,7 @@ export default function ssLiquidityManage() {
               label="Advanced"
               labelPlacement="start"
             />
-          </div>
+          </div> */}
           {
             activeTab === 'deposit' &&
             <div className={ classes.actionsContainer }>
