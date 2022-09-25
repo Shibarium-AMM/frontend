@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  margin-top: 90px;
   max-width: 485px;
   width: calc(100% - 180px);
 }
@@ -68,7 +67,7 @@
 }
 
 .textField {
-  margin-bottom: 4px;
+  margin-bottom: -1px;
   position: relative;
 }
 
@@ -192,7 +191,6 @@
   grid-gap: 12px;
   grid-template-columns: 1fr;
   /* border-left: 1px solid rgba(104, 108, 122, 0.25); */
-  padding: 0px 24px;
   width: 100%;
   height: 100%;
   margin-top: 12px;
@@ -211,7 +209,7 @@
 }
 
 .reAddPadding {
-  padding: 24px 0px;
+  padding: 24px 0px 0;
   width: 100%;
 }
 
@@ -271,6 +269,13 @@
   background: rgb(23, 52, 72) !important;
   color: rgba(255, 255, 255) !important;
   font-weight: 700 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  padding: 1.5rem 0 !important;
+  margin-bottom: -1px !important;
+  margin-left: -1px !important;
+  margin-right: -1px !important;
 }
 
 .buttonOverride:hover {
@@ -312,10 +317,11 @@
 .massiveInputContainer {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 0px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: black ;
+  border: 1px solid rgba(255, 255, 255, .2);
 }
 
 .massiveInputAssetSelect {
@@ -364,12 +370,10 @@
 }
 
 .displayAssetIcon {
-  border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
   width: 100px;
   height: 100px;
-  padding: 10px;
+  padding: 1.5rem;
 }
 
 .someIcon {
@@ -378,22 +382,24 @@
 .img1Logo {
   position: absolute;
   left: 0px;
-  top: 10px;
-  border: 5px solid #212b48;
+  top: 50%;
+  transform: translateY(-50%);
   border-radius: 100px;
+  height: 70px;
 }
 .img2Logo {
   position: absolute;
-  left: 60px;
+  left: 30px;
   z-index: 1;
-  top: 10px;
-  border: 5px solid #212b48;
+  top: 50%;
+  transform: translateY(-50%);
   border-radius: 100px;
+  height: 70px;
 }
 .doubleImages {
   display: flex;
   position: relative;
-  width: 140px;
+  width: 100px;
   height: 80px;
   padding: 10px;
   box-sizing: content-box;
@@ -543,10 +549,10 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid #212B48;
-  border-radius: 10px;
-  width: calc(100% - 52px);
-  margin: 25px 25px 0px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 0px;
+  width: 100%;
+  /* margin: 25px 25px 0px 25px; */
   position: relative;
   min-height: 60px;
 }
